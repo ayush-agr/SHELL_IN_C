@@ -1,0 +1,23 @@
+# Shell-in-C
+
+* The code is basically divided into two files namely allfunctions.h and final.c .
+* The allfunctions.h is a file containing all the functions which are required in the execution of the shell.
+* Functions includes ls, cd, pwd, echo, ls -[al] and pinfo.
+* Firstly, a prompt is displayed in the shell using printPrompt() function.
+* Then the line that is given as input is read and split considering delimiter as ';' and then the different commands are splited
+using ' ' as delimiter.
+* Foreground and background process are also implemented.
+
+* Name of the functions and their use:
+	printPrompt() - for printing the prompt.
+	split() - for spliting on the basis of some delimiter.
+	input_line() - for taking the line as input.
+	func_echo() - for implementing echo
+	func_ls() - for implementing ls
+	func_ls_l() - for implementing ls -[al] 
+	getting_permissions() - for finding the permissions of the files and directories
+	func_cd() - for implementing cd 
+	new_func_backgrd() - for implementing the process in background using fork()
+	new_func_foregrd() - for implementing the process in foreground using fork()
+	func_pinfo() - for implementing a user_defined function to get status of a process
+	
